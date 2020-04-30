@@ -2,10 +2,8 @@ import os, sys
 os.environ["CUDA_VISIBLE_DEVICES"]='0'
 from model.custom_model import unet
 from evaluation_functions import *
-from group_norm import GroupNormalization
 import numpy as np
 import matplotlib.pyplot as plt
-from tensorflow.keras.models import load_model
 
 #change the foldnum here to access different cross validation models
 foldnum=0
