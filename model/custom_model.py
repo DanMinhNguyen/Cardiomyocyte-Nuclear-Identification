@@ -8,9 +8,9 @@ from tensorflow.keras.layers import Conv3D, UpSampling3D, MaxPool3D
 
 from tensorflow.keras.constraints import UnitNorm, MaxNorm
 
-from groupnorm import GroupNormalization
-from dropblock import DB1D, DB2D, DB3D
-from weightconstraint import WeightStandardization
+from model.groupnorm import GroupNormalization
+from model.dropblock import DB1D, DB2D, DB3D
+from model.weightconstraint import WeightStandardization
 
 def print_model_layers(model):
     for i, layer in enumerate(model.layers):
